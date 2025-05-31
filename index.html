@@ -21,7 +21,18 @@
       padding: 30px 40px;
       text-align: center;
     }
-    header h1 {
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .header-content img {
+      height: 60px;
+      border-radius: 12px;
+    }
+    .header-content h1 {
       margin: 0;
       font-size: 36px;
     }
@@ -111,23 +122,38 @@
     footer p {
       margin: 5px 0;
     }
+    /* Floating WhatsApp Button */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+    }
+    .whatsapp-float img {
+      height: 60px;
+      width: 60px;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Sawari India</h1>
+    <div class="header-content">
+      <img src="https://s3.ap-south-1.amazonaws.com/nextel.io/message/330/569092209236856.jpeg" alt="Sawari India Logo">
+      <h1>Sawari India</h1>
+    </div>
     <p>Your Local Taste on Wheels</p>
   </header>
 
   <section class="hero">
-    <h1>Delicious Indian Food</h1>
-    <p>Hot, Fresh & Delivered to Your Doorstep!</p>
-    <a href="https://wa.me/919999999999" class="button" target="_blank">Order Now on WhatsApp</a>
+    <h1>Sawari North Indian Kitchen</h1>
+    <p>Delicious Food from North Indian, Mughlai, Biryani, Kebab, Seafood, Chinese & More</p>
+    <a href="https://wa.me/919731860072" class="button" target="_blank">Order Now on WhatsApp</a>
   </section>
 
   <section class="about">
     <h2>About Us</h2>
     <p>Sawari India is your trusted food delivery service, bringing the magic of homemade Indian meals directly to you. Perfectly spiced, freshly packed, and served with love!</p>
+    <p>We specialize in: <strong>North Indian, Mughlai, Biryani, Kebab, Seafood, Chinese, Bar Food, and Desserts.</strong></p>
   </section>
 
   <section class="features">
@@ -165,8 +191,8 @@
 
   <section class="contact">
     <h2>Contact Us</h2>
-    <p>📍 </p>
-    <p>📞 +91 0000000000 </p>
+    <p>📍 125/2, 2nd Floor, Visthar, Byrathi Main Road, Opp. Southern Asia Bible College, Hennur, Bangalore</p>
+    <p>📞 +91 97318 60072</p>
     <p>📧 info@sawariindia.co.in</p>
   </section>
 
@@ -174,6 +200,10 @@
     <p>&copy; 2025 Sawari India. All rights reserved.</p>
     <p>Designed with ❤️ for food lovers.</p>
   </footer>
-</body>
-</html>
 
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/919731860072" class="whatsapp-float" target="_blank">
+    <img src="https://img.icons8.com/color/96/000000/whatsapp--v1.png" alt="Chat on WhatsApp">
+  </a>
+</body> 
+</html>
